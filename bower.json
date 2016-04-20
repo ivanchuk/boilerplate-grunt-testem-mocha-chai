@@ -1,0 +1,35 @@
+{
+  "name": "boilerplate-grunt-testem-mocha-chai",
+  "homepage": "https://github.com/ivanchuk/boilerplate-grunt-testem-mocha-chai",
+  "authors": [
+    "ivanchuk <ivanchuk@gmail.com>"
+  ],
+  "description": "Boilerplate project with grunt task manager configured for building and running tests with testem, mocha and chai",
+  "main": "index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "boilerplate",
+    "grunt",
+    "testem",
+    "mocha",
+    "chai",
+    "bower",
+    "ivanchuk"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "requirejs": "^2.1.22",
+    "jquery-dist": "^2.1.3"
+  }
+}

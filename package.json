@@ -1,0 +1,11 @@
+{
+  "name": "boilerplate-grunt-testem-mocha-chai",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-testem-mincer": "^0.5.18"
+  },
+  "dependencies": {
+    "grunt-contrib-jshint": "^1.0.0"
+  }
+}
