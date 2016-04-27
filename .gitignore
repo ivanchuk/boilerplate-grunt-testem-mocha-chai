@@ -1,6 +1,3 @@
 node_modules
-/libs
-/build
-
 npm-debug.log
 testem.log

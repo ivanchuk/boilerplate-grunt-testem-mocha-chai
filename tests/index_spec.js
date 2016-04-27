@@ -1,13 +1,10 @@
-assert = require('chai').assert;
+var expect, assert, should;
 
-describe('Test 1', function() {
-  it('asd', function(dome) {
-    var foo = {};
-    assert(true);
-    done();
-  })
+assert = chai.assert;
+expect = chai.expect;
+should = chai.should();
+
+describe('Smoe object', function() {
+  it('should have some properties');
+  it('should have some methods');
 });
-describe('Test 1');
-describe('Test 1');
-describe('Test 1');
-describe('Test 1');

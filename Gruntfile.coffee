@@ -4,31 +4,14 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: pkg
 
-    jshint:
-      all: ['tests/**/*.js']
-
     testem:
-      tests:
-        src: [
-          'tests/config.js'
-          'tests/*_spec.js'
-        ]
+      basic:
+        src: ['tests/**/*.js']
         options:
-          framework: 'mocha'
-          launch_in_ci: ['Chrome']
-          launch_in_dev: ['PhantomJS']
+          launch_in_ci: ['PhantomJS']
+          launch_in_dev: ['Chrome']
 
-#    watch:
-#      app:
-#        files: ['src/**/*.js']
-#        tasks: ['jshint', 'concat:app', 'uglify:app']
-#      tmpl:
-#        files: ['src/**/*.html']
-#        tasks: ['copy:assets', 'copy:index']
-
-  grunt.loadNpmTasks 'grunt-contrib-jshint'
   grunt.loadNpmTasks 'grunt-testem-mincer'
-#  grunt.loadNpmTasks 'grunt-contrib-watch'
 
-  grunt.registerTask 'default', ['jshint', 'tests']
-  grunt.registerTask 'tests', ['testem']
+  grunt.registerTask 'default', ['testem:run:basic']
+  grunt.registerTask 'spec', ['testem:ci:basic']
