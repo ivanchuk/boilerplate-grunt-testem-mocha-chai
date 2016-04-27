@@ -1,8 +1,11 @@
 {
   "predef": [
-    "chai",
     "describe",
-    "it"
+    "it",
+    "before",
+    "after",
+    "beforeEach",
+    "afterEach"
   ],
   "browser": true,
   "boss": true,
