@@ -1,6 +1,15 @@
 # boilerplate-grunt-testem-mocha-chai
 Boilerplate project with grunt task manager configured for building and running tests with testem, mocha and chai
 
+## Requirements
+
+Install Mocha and PhantomJS
+
+```
+$ npm install -g mocha
+$ npm install -g phantomjs
+```
+
 ## How to use
 
 ```
